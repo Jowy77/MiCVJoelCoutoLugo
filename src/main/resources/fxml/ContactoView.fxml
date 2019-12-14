@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane fx:id="view" dividerPositions="0.5, 0.5" orientation="VERTICAL" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <TitledPane collapsible="false" text="Telefonos">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <content>
+            <HBox spacing="5.0">
+               <children>
+                  <TableView fx:id="telefonosTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="numeroColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="100.0" text="Numero" />
+                      <TableColumn fx:id="tipoColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="100.0" text="Tipo" />
+                    </columns>
+                  </TableView>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Button fx:id="telefonoAñadirButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAddTelefonoAction" text="Añadir" />
+                        <Button fx:id="telefonoEliminarButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onRemoveTelefonoAction" text="Eliminar" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </TitledPane>
+      <TitledPane collapsible="false" text="Direcciones de correo">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <content>
+            <HBox spacing="5.0">
+               <children>
+                  <TableView fx:id="emailsTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="emailColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="225.0" text="Email" />
+                    </columns>
+                  </TableView>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Button fx:id="emailAñadirButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAddEmailAction" text="Añadir" />
+                        <Button fx:id="emailEliminarButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onRemoveEmailAction" text="Eliminar" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </TitledPane>
+      <TitledPane collapsible="false" text="Webs">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <content>
+            <HBox spacing="5.0">
+               <children>
+                  <TableView fx:id="websTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="urlColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="225.0" text="URL" />
+                    </columns>
+                  </TableView>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Button fx:id="webAñadirButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAddWebAction" text="Añadir" />
+                        <Button fx:id="webEliminarButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onRemoveWebAction" text="Eliminar" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </TitledPane>
+   </items>
+</SplitPane>

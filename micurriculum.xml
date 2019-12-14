@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cv>
+    <contacto>
+        <emails direccion="cnorris@gmail.com"/>
+        <telefonos numero="922631444"/>
+        <telefonos numero="666112222"/>
+    </contacto>
+    <Experiencias/>
+    <Formacion>
+        <Titulo desde="2019-12-02" hasta="2019-12-21">
+            <denominacion>dcsedv</denominacion>
+            <organizador>cewvce</organizador>
+        </Titulo>
+    </Formacion>
+    <Habilidades>
+        <Conocimiento denominacion="dfbdr" nivel="MEDIO"/>
+    </Habilidades>
+    <personal identificacion="12345678Z">
+        <apellidos>Norris</apellidos>
+        <codigoPostal>38204</codigoPostal>
+        <direccion>Calle no se qué, 12</direccion>
+        <fechaNacimiento>1942-10-06</fechaNacimiento>
+        <localidad>La Laguna</localidad>
+        <nacionalidades/>
+        <nombre>Chuck</nombre>
+        <pais>España</pais>
+    </personal>
+</cv>
